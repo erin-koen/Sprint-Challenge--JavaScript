@@ -30,20 +30,20 @@ console.log(unRound.surfaceArea()); // 130
 class CubeMaker extends CuboidMaker {
     constructor(attr){
         super(attr);
-        this.width: attr.length;
-        this.heigh: attr.length;
     }
 
     surfaceArea() {
-        return 6*(Math.pow(this.height, 2));
+        return 6*(Math.pow(this.length, 2));
     }
     volume (){
-        return Math.pow(this.width, 3);
+        return Math.pow(this.length, 3);
     }
 }
 
 const cube = new CubeMaker({
-    length: 10
+    length: 10,
+    width: 10,
+    height: 10,
 })
 
 

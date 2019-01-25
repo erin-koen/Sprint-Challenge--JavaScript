@@ -12,7 +12,7 @@ const consume = function(a, b, cb) {
   return cb(a,b);
 }
 
-
+// should note in step 1 instructions to call this consume() - ek
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
