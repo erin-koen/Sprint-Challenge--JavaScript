@@ -29,14 +29,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+** .map iterates over each item in the existing array, pushing the results of those iterations into a new array and leaving the original unchanged.  .forEach mutates the original array. 
 
 2. What is the difference between a function and a method?
+** A method is a function that's written on an object. 
 
 3. What is closure?
+* Closure is the concept that dictates which information is accessible where. This governance says that functions will always look towards the more general scope for context. Any variables declared inside more specific functions will not be available, It's like a Chinese finger trap - information only flows one way. 
 
 4. Describe the four rules of the 'this' keyword.
+* Global Binding - in the global scope, the value of This will be the window or console object.
+* Implicit Binding - whenever a function is called by a preceding dot, the object left of the dot gets ’this’. When 'this' is used within an object, it’s implied that the object is the context to which 'this' is referring.
+* New Binding - related to constructor functions. when used within a constructor function, this refers to the object that is being created when the function is called. 
+* Explicit Binding - .bind, .call, .apply can overwrite implicit and new binding, and provide a child  object with access to a parent object's 'this'.
+
 
 5. Why do we need super() in an extended class?
+* The super() function is used (in conjunction with the extends keyword) to  create a connection between the parent's constructor and the child's attributes. 
 
 ## Project Set up
 
@@ -84,4 +93,4 @@ In your solutions, it is essential that you follow best practices and produce cl
 
 ## Stretch Problems
 
-There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
+There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!.
